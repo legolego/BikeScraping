@@ -1,0 +1,11 @@
+pandas
+BeautifulSoup4
+requests
+numpy
+matplotlib
+seaborn
+selenium
+lxml
+chromadb
+sentence-transformers
+ipywidgets
