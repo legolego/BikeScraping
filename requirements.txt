@@ -9,3 +9,7 @@ lxml
 chromadb
 sentence-transformers
 ipywidgets
+bm25s[full]
+PyStemmer
+jax[cpu]
+openai

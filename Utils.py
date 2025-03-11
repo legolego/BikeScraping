@@ -85,7 +85,7 @@ def get_pinkbike_article_dict(html_soup):
     # Now get all text from the blog div (excluding media divs)
     blog_text = blog_div.get_text(separator=' ',strip=True)  # strip=True removes leading/trailing whitespaces
 
-    return {'title': title, 'author': author, 'date': date, 'text': blog_text, 'sha256': generate_sha256_id(blog_text)}
+    return {'title': title, 'author': author, 'date': date, 'text': blog_text, 'sha256': generate_sha256_id(title + ': ' + blog_text)}
 
 def get_pinkbike_article_links_list_from_rss(url):
     # Fetch the raw XML content
